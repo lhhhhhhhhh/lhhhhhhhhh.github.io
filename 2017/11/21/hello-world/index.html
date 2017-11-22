@@ -119,7 +119,7 @@
   <div id="content-inner">
     
 <article id="post">
-  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-6.png)" >
+  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-3.png)" >
   <h2>react-native集成codepush【android】</h2>
     
   <p>作者:LH &nbsp&nbsp 发布于:<time datetime="2017-11-21T07:32:40.379Z">
@@ -148,7 +148,7 @@
 <h3 id="发布更新（两种方法）"><a href="#发布更新（两种方法）" class="headerlink" title="发布更新（两种方法）"></a>发布更新（两种方法）</h3><p>方法一：<br>打包：react-native bundle –platform android –entry-file index.android.js –bundle-output android/app/src/main/assets/index.android.bundle –dev false<br>发布：code-push release LyApp android/app/src/main/assets/index.android.bundle 1.0.1 –deploymentName Production –description “test” –mandatory true<br>说明：此种方法app无法加载出资源文件<br>相关有坑的地方可参考<a href="https://www.cnblogs.com/rayshen/p/5502538.html" target="_blank" rel="external">https://www.cnblogs.com/rayshen/p/5502538.html</a></p>
 <p>方法二：<br>打包+发布：code-push release-react LyApp android –t 1.0.1 –dev false -d Production –des “描述” –m true</p>
 <p>说明：<br>1.CodePush默认是更新 staging 环境的，如果是staging，则不需要填写 deploymentName。<br>2.如果有 mandatory 则Code Push会根据mandatory 是true或false来控制应用是否强制更新。默认情况下mandatory为false即不强制更新。</p>
-<p>以上是所有步骤，接下来我们启动事先安装好的应用看看有什么变化把！<br>另：还可参考<br>作者：CrazyCodeBoy<br>链接：<a href="http://www.jianshu.com/p/9e3b4a133bcc" target="_blank" rel="external">http://www.jianshu.com/p/9e3b4a133bcc</a><br>來源：简书</p>
+<p>以上是所有步骤，接下来我们启动事先安装好的应用看看有什么变化把！<br>另：还可参考<a href="http://www.jianshu.com/p/9e3b4a133bcc" target="_blank" rel="external">http://www.jianshu.com/p/9e3b4a133bcc</a></p>
 
   </div>
   <!--评论块-->
